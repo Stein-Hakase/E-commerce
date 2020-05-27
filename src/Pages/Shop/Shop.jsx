@@ -1,5 +1,6 @@
 import React from 'react'
 import SHOP_DATA from './shop.data'
+import PreviewCollection from '../../Components/Preview-Collection/PreviewCollection'
 
 class Shop extends React.Component{
     constructor(props){
@@ -11,8 +12,12 @@ class Shop extends React.Component{
 
     render(){
         return(
-            <div>
-                this is the stupid Shop
+            <div className='shop-page'>
+                {
+                    this.state.data.map(({id,...shop}) =>
+                        <PreviewCollection key={id} {...shop} />
+                    )
+                }
             </div>
         )
     }
