@@ -4,7 +4,8 @@ const FormInput=({handleChange,label,...props})=>(
     
    <div className='group'>
       
-    <input 
+    <input
+    
     className='form-input' 
     type={props.type}
     onChange={handleChange}
