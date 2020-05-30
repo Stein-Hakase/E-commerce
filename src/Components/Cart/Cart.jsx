@@ -10,4 +10,5 @@ const Cart =()=>(
       <CustomButton>CHECK-OUT</CustomButton>
     </div>
 )
+
 export default Cart
