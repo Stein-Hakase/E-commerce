@@ -37,7 +37,7 @@ class  App extends React.Component {
   return (
     <div >
         <Header/>
-       <Switch>
+        <Switch>
           <Route exact path='/' component={HomePage}/>
           <Route  path='/shop' component={Shop}/>
           <Route exact path='/sign-in' 
@@ -49,7 +49,7 @@ class  App extends React.Component {
           )}
 
           /> 
-       </Switch>
+        </Switch>
     </div>
   )}
 }
