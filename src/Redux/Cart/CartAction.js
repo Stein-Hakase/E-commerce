@@ -8,3 +8,13 @@ export const AddToCart=(item)=>({
     payload:item
     
 })
+export const DeleteItem=(item)=>({
+    type:CartToggleActions.DELETE_ITEM,
+    payload:item
+
+})
+export const DecreaseItem=(item)=>({
+    type:CartToggleActions.DECREASE_ITEM,
+    payload:item
+
+})

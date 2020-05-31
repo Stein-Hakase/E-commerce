@@ -1,5 +1,5 @@
 import {CartToggleActions}from './CartTypes'
-import {AddToCart} from './CartUtils'
+import {AddToCart,DecreaseItem} from './CartUtils'
 
 
 const INITIAL_STATE={
@@ -18,7 +18,18 @@ const CartReducer =(state=INITIAL_STATE, action)=>{
                 ...state,
                 cartItems:AddToCart(state.cartItems,action.payload)
             }
+            case CartToggleActions.DECREASE_ITEM:
+                return{
+                    ...state,
+                    cartItems:DecreaseItem(state.cartItems,action.payload)
+                }
     
+        case CartToggleActions.DELETE_ITEM:
+           return {
+               ...state,
+               cartItems:state.cartItems.filter(item=>item.id!==action.payload.id)
+          }
+        
         default:
             return state;
     }

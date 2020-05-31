@@ -24,7 +24,17 @@
   
     .quantity {
       padding-left: 20px;
+      display: flex;
+      align-items: center;
+      .value{
+        margin: 0 .4rem;
+      }
+      .arrow{
+        cursor: pointer;
+      }
+
     }
+   
   
     .remove-button {
       padding-left: 12px;

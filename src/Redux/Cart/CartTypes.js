@@ -1,4 +1,6 @@
 export const CartToggleActions={
     TOGGLE_CART:'TOGGLE_CART',
-    ADD_TO_CART:'ADD_TO_CART'
+    ADD_TO_CART:'ADD_TO_CART',
+    DELETE_ITEM:'DELETE_ITEM',
+    DECREASE_ITEM:'DECREASE_ITEM'
 }
