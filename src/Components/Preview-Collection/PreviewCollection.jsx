@@ -1,7 +1,7 @@
 import React from  'react'
 import CollectionItem from '../Collection-item/CollectionItem'
 import './PreviewCollection.scss'
-const PreviewCollection =({title,items})=>{
+const PreviewCollection =({collection:{title,routeName, items}})=>{
     return(
             <div className='collection-preview'>
                 <h3 className='title'>{title.toUpperCase()}</h3>
